@@ -16,7 +16,7 @@ The repo is for development only. Users get everything from the Confluence artic
 
 - Confluence 7.19 edits pages in a TinyMCE iframe `#wysiwygTextarea_ifr`. The script polls every 1 s and puts `<style id="sticky-th-style">` into that iframe's `<head>`. Because the style sits outside the editor body, it is never saved into the page (checked: `tinymce.activeEditor.getContent()` contains no `sticky`/`<style`).
 - The iframe document scrolls by itself (`scrollingElement`), so `position:sticky; top:0` inside it sticks to the top of the editor area, under the toolbar.
-- Selector `table.confluenceTable tr:first-child>th`: sticks only the first row. The first version used a plain `th`, so row-header cells (`th` in column 1) also stuck to the top and covered the header. Tables usually start with `<colgroup>`, so `tbody:first-child` would not match.
+- Selector `table.confluenceTable tr:first-child>th`: sticks only the first row. A plain `th` selector would also stick row-header cells (`th` in column 1) to the top, over the header. Tables usually start with `<colgroup>`, so `tbody:first-child` would not match.
 - Header cells already have an opaque background (`#f4f5f7`), so rows don't show through.
 - View mode is not the script's job: Confluence has its own floating header there (`.tableFloatingHeader*`).
 
