@@ -9,7 +9,7 @@ The repo is for development only. Users get everything from the Confluence artic
 | Script | `confluence-sticky-table-header.user.js` (the only code) |
 | Install URL | `https://raw.githubusercontent.com/vaas1k/confluence-sticky-table-header/main/confluence-sticky-table-header.user.js`. The article links to it, so never rename the file or the `main` branch |
 | User article | confluence.e-kama.com, page `236308920`, space `~aleksei.vasik` (under Home `225562570`), labels `userscript`, `tampermonkey`, `howto`. The `demo.gif` attachment is a copy of `docs/demo.gif` |
-| AI Bonus one-pager | page `236308937`, same space and parent, no labels. It has its own copy of `demo.gif`. Both pages are readable by `kama-employees` through space permissions (no page restrictions); the user chose not to widen access, because only the whole personal space could be opened to more groups |
+| AI Bonus one-pager | page `236308937` («Сделал закреплённую шапку таблиц для Confluence в режиме редактирования»), same space and parent, no labels, no status section (made for personal use, not rolled out). It has its own copy of `demo.gif`. Both pages are readable by `kama-employees` through space permissions (no page restrictions); the user chose not to widen access, because only the whole personal space could be opened to more groups |
 | Demo GIF source | `docs/demo.gif` (recorded on dev, space TEST) |
 
 ## How it works
